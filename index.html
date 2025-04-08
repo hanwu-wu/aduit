@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>稽核系統</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入 SheetJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <!-- 引入 jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- 引入 Noto Sans TC 字型 -->
+    <script src="https://cdn.jsdelivr.net/npm/@jspdf/font-noto-sans-tc@0.0.1/dist/NotoSansTC-Regular.js"></script>
+</head>
+<body>
+    <h1>稽核表單</h1>
+    <form id="auditForm">
+        <div id="questions"></div>
+        <button type="button" onclick="exportBoth()">匯出 Excel 與 PDF 並發送</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
